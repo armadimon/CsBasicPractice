@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\unity\\TicTacto\\MyApp.csproj",
+      "projectUniqueName": "C:\\unity\\SnakeGame\\MyApp.csproj",
       "projectName": "MyApp",
-      "projectPath": "C:\\unity\\TicTacto\\MyApp.csproj",
+      "projectPath": "C:\\unity\\SnakeGame\\MyApp.csproj",
       "packagesPath": "C:\\Users\\wnsrj\\.nuget\\packages\\",
-      "outputPath": "C:\\unity\\TicTacto\\obj\\",
+      "outputPath": "C:\\unity\\SnakeGame\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
