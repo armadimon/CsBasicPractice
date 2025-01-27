@@ -8,8 +8,23 @@ class Program
         decimal height = 0;
         decimal bmi = 0;
         bool valid = false;
-        Console.WriteLine("BMI calculator");
 
+        Console.WriteLine("BMI calculator");
+        while (valid == false)
+        {
+            string? input;
+            Console.Write("Please enter your height : ");
+            input = Console.ReadLine();
+            Console.Clear();
+            valid = (decimal.TryParse(input, out height) && height > 0);
+            if (!valid)
+            {
+                Console.WriteLine("Please enter a valid number");
+                continue ;
+            }
+            height = (height / 100);
+        }
+        valid = false;
         while (valid == false)
         {
             string? input;
@@ -23,22 +38,7 @@ class Program
                 Console.WriteLine("Please enter a valid number");
             }
         }
-        valid = false;
-        while (valid == false)
-        {
-            string? input;
-            Console.Write("Please enter your height : ");
-            input = Console.ReadLine();
-            Console.Clear();
-            valid = (decimal.TryParse(input, out height) || height < 0);
-            if (!valid)
-            {
-                Console.WriteLine("Please enter a valid number");
-                continue ;
-            }
-            height = (height / 100);
-        }
         bmi = (weight / (height * height));
-        Console.WriteLine("BMI : " + decimal.Round(bmi));
+        Console.WriteLine($"your BMI : {bmi:F1}");
     }
 }
