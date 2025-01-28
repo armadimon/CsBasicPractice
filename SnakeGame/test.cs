@@ -2,6 +2,7 @@ using System;
 using System.Threading;
 class Program
 {
+
     static void Main(string[] args)
     {
         int[,] board = new int[30, 50];
@@ -72,5 +73,5 @@ class Program
 
 class Snake
 {
-
+    
 }
